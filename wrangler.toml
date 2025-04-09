@@ -1,5 +1,4 @@
 name = "vue-ssr-poc"
-# type = "javascript" is required to use the `[build]` section
 type = "javascript"
 account_id = ""
 workers_dev = true
@@ -7,7 +6,8 @@ route = ""
 zone_id = ""
 
 [build]
-command = "npm run build:dev"
+command = "npm run build:prod"
+
 [build.upload]
 format = "modules"
-main = "./index.mjs"
+main = "./dist/index.mjs"
